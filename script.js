@@ -320,7 +320,7 @@ function loadProjects(filter = 'all') {
                 <div class="project-tools">
                     ${project.tools.map(tool => `<span class="project-tool">${tool}</span>`).join('')}
                 </div>
-                <p class="project-related">Berkaitan dengan: ${project.related}</p>
+                <p class="project-related">Related to: ${project.related}</p>
                 <button class="btn-detail" onclick="openProjectModal(${project.id})">Read More</button>
             </div>
         </div>
