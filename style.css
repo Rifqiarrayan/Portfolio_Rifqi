@@ -509,8 +509,31 @@ section {
     border-left: 4px solid #0a0a0a;
 }
 
-.experience-item h4 {
+.experience-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.experience-info {
+    flex: 1;
+}
+
+.experience-item h4 {
+    margin-bottom: 0.3rem;
+}
+
+.experience-info p {
+    margin: 0;
+    color: #555;
 }
 
 .experience-item .date {
@@ -585,8 +608,9 @@ section {
 .slider img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: none;
+    background-color: #f5f5f5;
 }
 
 .slider img.active {
@@ -742,7 +766,7 @@ section {
     width: 100%;
     max-width: 220px;
     border: 1px solid rgba(0,0,0,0.04);
-    min-height: 220px; /* uniform height */
+    min-height: 280px; /* uniform height */
     justify-content: space-between;
 }
 
@@ -753,8 +777,27 @@ section {
     border-radius: 8px;
 }
 
-.cert-content h3 { font-size: 0.95rem; margin: 0; text-align: center; }
-.cert-content .btn { min-width: 110px; }
+.cert-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.cert-content h3 { 
+    font-size: 0.95rem; 
+    margin: 0; 
+    text-align: center;
+    min-height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-content .btn { 
+    min-width: 110px; 
+}
 
 .cert-card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
 

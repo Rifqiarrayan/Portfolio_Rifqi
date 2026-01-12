@@ -1,5 +1,22 @@
 // Experience Data
 const experienceData = {
+    bpjs: {
+        title: 'Procurement Data Management Intern - BPJS Ketenagakerjaan',
+        description: `
+            <div class="modal-key">
+                <div class="modal-key-header">Key responsibility:</div>
+                <ul class="modal-key-list">
+                    <li>Cleaned and preprocessed nationwide Rumah BUMN MSME data (&gt;20,000 records) for analysis and reporting.</li>
+                    <li>Processed KPI data and evaluated performance for &gt;70 facilitators and &gt;80 rangers across Indonesia.</li>
+                    <li>Performed quarterly analysis on budget allocation, fund utilisation, and KPI achievement; built interactive Looker Studio and Tableau dashboards with KPI metrics and visualization of budget effectiveness and other related metrics.</li>
+                    <li>Developed Excel VBA macros for data cleaning, processing, duplication checks, and trend detection, reducing processing time by up to 80%.</li>
+                    <li>Conducted MSME trend analysis and prepared weekly internal reports on analyzed data, including sales and performance insights.</li>
+                </ul>
+            </div>
+        `,
+        slides: ['images/BPJS.jpeg'],
+        tools: ['Tableau', 'Google Looker Studio', 'Excel']
+    },
     telkom: {
         title: 'Data Analyst Intern - PT Telkom Indonesia',
         description: `
@@ -86,12 +103,13 @@ const experienceData = {
 const projectsData = [
     {
         id: 1,
-        title: 'RAB Effectiveness Dashboard',
+        title: 'RAB Efektivitas Dashboard',
         category: 'data-analyst',
         related: 'Telkom Indonesia Internship',
-        tools: ['Looker Studio', 'Tableau', 'Data Visualization'],
-        description: 'Built interactive dashboards to monitor budget allocation effectiveness and KPI achievement across nationwide MSME programs. Includes visualizations for budget utilization, performance metrics, and trend analysis.',
-        image: '📊'
+        tools: ['Tableau', 'Looker Studio', 'Spreadsheet'],
+        description: 'Performed quarterly analysis on budget allocation, fund utilisation, and KPI achievement; built interactive Looker Studio and Tableau dashboards with KPI metrics and visualization of budget effectiveness and other.',
+        image: '🔒',
+        slides: ['images/Confidential project.jpg']
     },
     {
         id: 2,
@@ -144,35 +162,37 @@ const projectsData = [
 const certificationsData = [
     // Special certificates first (1 and 2)
     {
-    id: 1,
-    title: 'IT Specialist - Data Analytics (Certiport)',
-    category: 'data-analyst',
-    image: 'images/Certiport.jpg',
-    hasDetails: true,
-    details: `
-    <div class="modal-key">
-        <div class="modal-key-header">IT Specialist - Data Analytics (Certiport)</div>
-        <ul class="modal-key-list">
-            <li>The IT Specialist - Data Analytics certificate is held offline in the laboratory of the Faculty of Computer Science.</li>
-            <li>The exam tests understanding and skills in data analysis, including data processing, visualization and interpretation for sound decision-making.</li>
-        </ul>
-    </div>`
-},
-{
-    id: 2,
-    title: 'Information Representation and Data Organization (Huawei ICT Academy)',
-    category: 'data-analyst',
-    image: 'images/Huawei Certification.png',
-    hasDetails: true,
-    details: `
-    <div class="modal-key">
-        <div class="modal-key-header">Information Representation and Data Organization (Huawei ICT Academy)</div>
-        <ul class="modal-key-list">
-            <li>Complete a certification that covers data formats, encoding techniques, and data organization strategies essential for efficient data analysis and processing.</li>
-            <li>Provides a solid foundation in understanding data structures relevant to analytical workflows.</li>
-        </ul>
-    </div>`
-},
+        id: 1,
+        title: 'IT Specialist - Data Analytics (Certiport)',
+        category: 'data-analyst',
+        image: 'images/Certiport.jpg',
+        hasDetails: true,
+        slides: ['images/cfi.png', 'images/Certiport.jpg'],
+        details: `
+        <div class="modal-key">
+            <div class="modal-key-header">IT Specialist - Data Analytics (Certiport)</div>
+            <ul class="modal-key-list">
+                <li>The IT Specialist - Data Analytics certificate is held offline in the laboratory of the Faculty of Computer Science.</li>
+                <li>The exam tests understanding and skills in data analysis, including data processing, visualization and interpretation for sound decision-making.</li>
+            </ul>
+        </div>`
+    },
+    {
+        id: 2,
+        title: 'Information Representation and Data Organization (Huawei ICT Academy)',
+        category: 'data-analyst',
+        image: 'images/Huawei Certification.png',
+        hasDetails: true,
+        slides: ['images/Huawei Certification.png'],
+        details: `
+        <div class="modal-key">
+            <div class="modal-key-header">Information Representation and Data Organization (Huawei ICT Academy)</div>
+            <ul class="modal-key-list">
+                <li>Complete a certification that covers data formats, encoding techniques, and data organization strategies essential for efficient data analysis and processing.</li>
+                <li>Provides a solid foundation in understanding data structures relevant to analytical workflows.</li>
+            </ul>
+        </div>`
+    },
     // Other certificates
     { id: 3, title: 'Data Science and Machine Learning (CFI)', category: 'data-scientist', image: 'images/cfi.png' },
     { id: 4, title: 'Intermediate Machine Learning (Kaggle)', category: 'data-scientist', image: 'images/ML(Kaggle).png' },
@@ -225,11 +245,27 @@ function openCertificationModal(id) {
     const cert = certificationsData.find(c => c.id === id);
     if (!cert) return;
     document.getElementById('modal-title').textContent = cert.title;
+    
     if (cert.hasDetails && cert.details) {
         document.getElementById('modal-description').innerHTML = cert.details;
+        
+        // If it has slides, populate the slider
+        if (cert.slides && cert.slides.length > 0) {
+            populateSlider(cert.slides);
+            currentSlide = 0;
+            showSlide(currentSlide);
+        } else {
+            // No slides, clear slider
+            const slider = document.querySelector('.slider');
+            if (slider) slider.innerHTML = '';
+        }
     } else {
         document.getElementById('modal-description').innerHTML = `<img src="${cert.image}" alt="${cert.title}" class="modal-cert-img">`;
+        // Clear slider for image-only display
+        const slider = document.querySelector('.slider');
+        if (slider) slider.innerHTML = '';
     }
+    
     // Clear tools for certifications (not used)
     document.getElementById('modal-tools').innerHTML = '';
     document.getElementById('modal-tools-title').style.display = 'none';
@@ -374,6 +410,9 @@ function openProjectModal(id) {
     const project = projectsData.find(p => p.id === id);
     document.getElementById('modal-title').textContent = project.title;
     document.getElementById('modal-description').innerHTML = project.description;
+
+    // populate slider with provided slides or fallback defaults
+    populateSlider(project.slides || defaultSlides);
 
     const toolsHtml = (project.tools || []).map(tool => `<span class="modal-tool">${tool}</span>`).join('');
     document.getElementById('modal-tools').innerHTML = toolsHtml;
