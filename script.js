@@ -68,19 +68,56 @@ const experienceData = {
 
     ksm: {
         title: 'Member Data Scientist - Kelompok Studi Mahasiswa Android UPNVJ',
+        image: 'images/Android.png',
         description: `
             <div class="modal-key">
-                <div class="modal-key-header">Key responsibility:</div>
+                <div class="modal-key-header">Member Data Science Basic (September - December 2024)</div>
                 <ul class="modal-key-list">
-                    <li>Mentaled and practiced advanced Microsoft Excel techniques (Pivot Table, Lookup functions, conditional formulas, data visualization).</li>
-                    <li>Utilized advanced SQL to write queries, perform multi table joins, apply aggregations, Window Function, etc and prepare datasets for analysis and modeling.</li>
-                    <li>Performed EDA, feature engineering, and machine learning modeling (KNN, DBSCAN, ensemble methods) across multiple end to end projects.</li>
-                    <li>Developed analytics workflows using Python (pandas, NumPy, scikit-learn) for data cleaning, preprocessing, and evaluation.</li>
-                    <li>Gained experience in NLP tasks and building recommendation systems, covering the full pipeline from raw data to actionable insights.</li>
+                    <li>Understand data types and data science methodology</li>
+                    <li>Master advanced SQL and Excel for data processing</li>
+                    <li>Learn Python libraries such as NumPy, Pandas, and Scikit-learn</li>
+                </ul>
+            </div>
+            <div class="modal-key">
+                <div class="modal-key-header">Member Data Science Beginner (February - June 2025)</div>
+                <ul class="modal-key-list">
+                    <li>Apply advanced data processing techniques</li>
+                    <li>Build K-Nearest Neighbors (KNN) and DBSCAN models</li>
+                    <li>Develop ensemble learning models and recommendation systems</li>
+                    <li>Understand Natural Language Processing (NLP) and Deep Learning</li>
+                    <li>Deploy models using Streamlit</li>
+                    <li>Complete a final project as an integration of all materials</li>
                 </ul>
             </div>
         `,
+        slides: ['images/Android.png'],
         tools: ['Python', 'SQL', 'Machine Learning', 'NLP', 'Excel Advanced', 'scikit-learn', 'Deep Learning']
+    },
+    mulmed: {
+        title: 'Member Web Development & UI/UX Design - Kelompok Studi Mahasiswa Multimedia UPNVJ',
+        image: 'images/Sertifikat Mulmed.jpg',
+        description: `
+            <div class="modal-key">
+                <div class="modal-key-header">Member Web Development (February - December 2024)</div>
+                <ul class="modal-key-list">
+                    <li>Studied fullstack web development under the guidance of mentors.</li>
+                    <li>Built responsive and interactive user interfaces using HTML, CSS, JavaScript, React.js, and Tailwind CSS.</li>
+                    <li>Gained experience in backend development with Express.js, focusing on routing, password authentication, and CRUD functionality.</li>
+                </ul>
+            </div>
+            <div class="modal-key">
+                <div class="modal-key-header">Member UI/UX Design (March 2025 - November 2025)</div>
+                <ul class="modal-key-list">
+                    <li>Learned UI/UX fundamentals: wireframe, user flow, design process, UI kit, color palette, and sequence flow</li>
+                    <li>Designed website and mobile app interfaces using Figma</li>
+                    <li>Created landing pages and interactive prototypes for project prototypes</li>
+                    <li>Conducted user research, UX writing, and documentation as part of the design process</li>
+                    <li>Explored UX principles to enhance user experience</li>
+                </ul>
+            </div>
+        `,
+        slides: ['images/Sertifikat Mulmed.jpg'],
+        tools: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS', 'Express.js', 'Figma', 'UI/UX Design']
     },
     senat: {
         title: 'Staff of Commission 3 - Senat Mahasiswa Fakultas Ilmu Komputer',
@@ -103,58 +140,133 @@ const experienceData = {
 const projectsData = [
     {
         id: 1,
-        title: 'RAB Efektivitas Dashboard',
+        title: 'Dashboard Procurement BPJS ketenagakerjaan',
         category: 'data-analyst',
-        related: 'Telkom Indonesia Internship',
-        tools: ['Tableau', 'Looker Studio', 'Spreadsheet'],
-        description: 'Performed quarterly analysis on budget allocation, fund utilisation, and KPI achievement; built interactive Looker Studio and Tableau dashboards with KPI metrics and visualization of budget effectiveness and other.',
-        image: '🔒',
+        related: 'BPJS Ketenagakerjaan Internship',
+        tools: ['Looker Studio', 'Tableau'],
+        description: 'Developed a procurement dashboard using Tableau, which includes spend analysis, procurement SLAs, PDN monitoring, contracts, organizational expenses, budgets, and PDN progress. Also, created a dashboard focused on procurement for 2025 using Looker Studio.',
+        image: 'images/Confidential project.jpg',
         slides: ['images/Confidential project.jpg']
     },
     {
         id: 2,
-        title: 'Uber Travel Pattern Analysis',
+        title: 'Budget effectiveness dashboard for Rumah BUMN facilitators and Rangers Witel Telkom Indonesia',
         category: 'data-analyst',
-        related: 'Personal Project',
-        tools: ['SQL', 'BigQuery', 'Excel'],
-        description: 'Analyzed Uber travel patterns using SQL queries on BigQuery. Identified peak hours, popular routes, and customer behavior patterns to derive actionable insights for optimization.',
-        image: '🚗'
+        related: 'Telkom Indonesia Internship',
+        tools: ['Looker Studio', 'Tableau'],
+        description: 'Performed quarterly analysis on budget allocation, fund utilisation, and KPI achievement; built interactive Looker Studio and Tableau dashboards with KPI metrics and visualization of budget effectiveness and other.',
+        image: 'images/Confidential project.jpg',
+        slides: ['images/Confidential project.jpg']
     },
     {
         id: 3,
-        title: 'Analyze E-Commerce Performance',
-        category: 'data-analyst',
-        related: 'Personal Project',
-        tools: ['Power BI', 'DAX', 'Data Modeling'],
-        description: 'Created comprehensive Power BI dashboard analyzing e-commerce metrics including sales trends, customer segmentation, product performance, and revenue analysis.',
-        image: '🛒'
+        title: 'Apple company stock price prediction',
+        category: 'data-scientist',
+        related: 'KSM Android UPNVJ',
+        tools: ['Python', 'Machine Learning', 'ARIMA', 'Google Colab', 'Microsoft Excel'],
+        description: "Apple Inc. (AAPL) stock is one of the most popular technology stocks and has the largest market capitalization in the world. Apple's stock price movements are a major concern for retail and institutional investors due to its consistent performance and significant valuation growth over the past few decades. To support investment decision-making, an analysis method is needed that is able to project future stock prices quantitatively. In this analysis, the focus is directed at the adjusted closing price (Adjusted Close), which is the stock price that has been calculated with dividends and stock splits, so that it is more accurate for use in historical analysis and predictions. One of the statistical methods commonly used in time series analysis is ARIMA (AutoRegressive Integrated Moving Average). This model works by modeling the relationship between past values (autoregressive), data differences (integrated), and past prediction errors (moving average). ARIMA is known to be effective in predicting data with linear patterns and seasonal trends, especially for financial data that is stationary or can be made stationary through transformation. Using the ARIMA model, a prediction is made of Apple's stock price (Adjusted Close) for the next 30 days (30 steps ahead) based on its historical pattern. The results of this prediction are expected to provide a short-term picture of the potential movement of stock prices, as well as being an initial reference in developing investment strategies or risk management in the stock market.",
+        image: 'images/Apple stock.png',
+        slides: ['images/Apple stock.png'],
+        githubLink: 'https://github.com/Rifqiarrayan/Apple-stock-prediction/tree/main'
     },
     {
         id: 4,
-        title: 'United State Flight Delay Analysis',
-        category: 'data-analyst',
-        related: 'Personal Project',
-        tools: ['Tableau', 'Data Visualization'],
-        description: 'Developed interactive Tableau visualizations to analyze flight delay patterns across US airports. Identified key factors contributing to delays and seasonal trends.',
-        image: '✈️'
+        title: 'Sentiment Analysis on Tokopedia (NLP Project)',
+        category: 'data-scientist',
+        related: 'KSM Android UPNVJ',
+        tools: ['Google Colab', 'Microsoft Excel', 'Python', 'Streamlit', 'Machine Learning'],
+        description: "In today's digital era, e-commerce platforms such as Tokopedia are the main place for people to conduct buying and selling transactions. Users often leave reviews of purchased products, both in positive and negative forms. These reviews have great potential to be analyzed to understand customer satisfaction, improve services, and provide better product recommendations. Therefore, sentiment analysis is one of the important approaches in evaluating public perception of products on the Tokopedia platform.",
+        image: 'images/sentiment analysis.png',
+        slides: ['images/sentiment analysis.png'],
+        githubLink: 'https://github.com/Rifqiarrayan/Analysis-sentiment-tokopedia'
     },
     {
         id: 5,
-        title: 'Sentiment Analysis on Tokopedia (NLP)',
+        title: 'Analysis Causes of Anemia',
         category: 'data-scientist',
-        related: 'Personal Project',
-        tools: ['Python', 'NLP', 'Machine Learning'],
-        description: 'Built a sentiment analysis model using Natural Language Processing to analyze customer reviews on Tokopedia. Classified sentiments and extracted insights from user feedback.',
-        image: '💬'
+        related: 'KSM Android UPNVJ',
+        tools: ['Google Colab', 'Microsoft Excel', 'Python', 'Machine Learning'],
+        description: 'Anemia is a significant health condition in Indonesia, with a high prevalence especially in children, adolescent girls and pregnant women. The main causes include iron deficiency, other nutritional deficiencies, chronic diseases, and genetic conditions. Anemia has a negative impact on maternal and child health, productivity, and child growth and development. Mitigation efforts involve iron supplementation, food fortification, improving diet, and controlling related diseases. A multi-sectoral approach involving various parties is needed to reduce the prevalence of anemia and improve the quality of life of Indonesian people.',
+        image: 'images/Anemia.png',
+        slides: ['images/Anemia.png'],
+        githubLink: 'https://github.com/Rifqiarrayan/project-data-science-analysis-causes-of-anemia'
     },
     {
         id: 6,
-        title: 'Banking Product Marketing Optimization',
+        title: 'Avocado Price Prediction',
         category: 'data-scientist',
-        related: 'Data Scientist Competition - UI',
-        tools: ['XGBoost', 'Streamlit', 'Python'],
-        description: 'Developed "Optimalisasi Kampanye Pemasaran Produk Perbankan (Deposito Berjangka) Menggunakan XGBoost dan Streamlit: Studi Kasus Optimalisasi Pemasaran Fintech di Indonesia". Built predictive model and interactive web application.',
-        image: '🏦'
+        related: 'KSM Android UPNVJ',
+        tools: ['Google Colab', 'Microsoft Excel', 'Python', 'Machine Learning', 'Ensemble Learning'],
+        description: 'Avocado price analysis using ensemble learning method',
+        image: 'images/Avocado.png',
+        slides: ['images/Avocado.png'],
+        githubLink: 'https://github.com/Rifqiarrayan/Avacado-Price-Prediction'
+    },
+    {
+        id: 7,
+        title: 'Credit Risk Modelling using Python',
+        category: 'data-scientist',
+        related: 'Personal Project',
+        tools: ['Google Colab', 'Microsoft Excel', 'Python', 'Machine Learning'],
+        description: 'In the financial industry, lending to individuals or companies is one of the main sources of income for financial institutions, both banks and financial technology (fintech) companies. However, every lending decision carries risks, one of which is credit risk, where the borrower is unable to fulfill their obligations in accordance with the agreed terms. To manage this risk, financial institutions need to implement a data-driven approach to assess the creditworthiness of potential borrowers before granting loans. One effective way is to use credit risk modeling, which builds a predictive model to assess the likelihood of someone defaulting based on historical data and borrower characteristics. With the development of technology and the increasing availability of data, credit risk analysis can be performed more accurately using machine learning techniques in the Python programming language. The utilization of these techniques enables the processing of large amounts of data, the creation of more precise predictive models, and automation in the credit decision-making process.',
+        image: 'images/credit.png',
+        slides: ['images/credit.png'],
+        githubLink: 'https://github.com/Rifqiarrayan/Credit-risk-modelling/tree/main'
+    },
+    {
+        id: 8,
+        title: 'Email campaign analysis',
+        category: 'data-scientist',
+        related: 'Personal Project',
+        tools: ['Google Colab', 'Microsoft Excel', 'Python', 'Machine Learning'],
+        description: 'In the ever-evolving digital era, companies of all sizes-small, medium, and large-are striving to increase their customer base through various marketing strategies. One effective and measurable method is email marketing. Small companies may see email as a cost-effective way to reach potential customers, while medium and large companies can utilize email to run more complex and segmented campaigns. However, the success of an email campaign is not always guaranteed. Factors such as email content, campaign type, email source, and subscriber characteristics can affect subscriber response. Therefore, it is important for companies to understand the elements that contribute to the success of their email campaigns. With this understanding, they can design more effective emails, increase engagement, and ultimately increase customer conversion and loyalty.',
+        image: 'images/Email.png',
+        slides: ['images/Email.png'],
+        githubLink: 'https://github.com/Rifqiarrayan/Project-data-science-email-campaign-analysis'
+    },
+    {
+        id: 9,
+        title: 'Life Expectacy with DBScan',
+        category: 'data-scientist',
+        related: 'KSM Android UPNVJ',
+        tools: ['Google Colab', 'Microsoft Excel', 'Python', 'Machine Learning'],
+        description: 'Life Expectancy data is important for understanding the quality of health in different countries. Clustering techniques help in finding patterns based on the life expectancy of males, females, and both. DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is used to cluster data based on density.',
+        image: 'images/Life Expectancy.png',
+        slides: ['images/Life Expectancy.png'],
+        githubLink: 'https://github.com/Rifqiarrayan/Life-expectacy-with-DBScan'
+    },
+    {
+        id: 10,
+        title: 'Optimizing Banking Product Marketing Campaigns (Term Deposits) Using XGBoost and Streamlit: A Case Study for Fintech Marketing Optimization in Indonesia',
+        category: 'data-scientist',
+        related: 'Data Scientist Competition - Ristek Faculty Computer Science, University of Indonesia',
+        tools: ['Google Colab', 'Microsoft Excel', 'Python', 'Machine Learning', 'XGBoost', 'Streamlit', 'SMOTE'],
+        description: 'Digital transformation has encouraged financial institutions to utilize advanced technology in their marketing activities. This study aims to develop a predictive model to identify potential customers who will respond to banking product marketing campaigns using the XGBoost algorithm. The dataset used is marketing campaign data from the banking sector, which is then processed using machine learning techniques and integrated into an interactive interface using Streamlit. The results show that the model is able to predict campaign success with high accuracy and uncover key features that influence customer decisions. This study offers practical solutions for the fintech industry in Indonesia in optimizing marketing strategies.',
+        image: 'images/univ_indonesia.png',
+        slides: ['images/univ_indonesia.png'],
+        huggingFaceLink: 'https://huggingface.co/rifqiarrayan/KELASCUPNVJ/tree/main'
+    },
+    {
+        id: 11,
+        title: 'Uber travel pattern analysis with Google BigQuery',
+        category: 'data-analyst',
+        related: 'Personal Project',
+        tools: ['Microsoft Excel', 'SQL', 'Google BigQuery'],
+        description: 'Uber is a technology company that provides on-demand transportation services through a digital app. The company focuses on operational efficiency and improving the user travel experience by leveraging data to understand travel patterns and sustainably optimize transportation services. It depicts comprehensive travel patterns through metrics such as total trips, average daily trips, duration, and distance traveled, grouped by user category and day of the week (weekdays and weekends). It identifies peak hours to understand transportation demand patterns. It evaluates travel efficiency based on average speed to identify potential bottlenecks and areas of potential congestion.',
+        image: 'images/uber_project.png',
+        slides: ['images/uber_project.png'],
+        googleDriveLink: 'https://drive.google.com/drive/folders/1YYSvg-baWpZBa5H40QNEF6JdYKKKZBQk'
+    },
+    {
+        id: 12,
+        title: 'E-commerce performance analysis 2018-2019 and creating a dashboard using Power BI',
+        category: 'data-analyst',
+        related: 'Personal Project',
+        tools: ['Power BI'],
+        description: 'The data used in this analysis comes from kaggle. This presentation aims to analyze e-commerce performance in 2018-2019, including revenue, profit, product retention, and total quantity. E-commerce has seen significant growth in recent years. This analysis was conducted to understand performance trends and identify areas for improvement in the 2018-2019 period.',
+        image: 'images/E-Commerce.png',
+        slides: ['images/E-Commerce.png'],
+        githubLink: 'https://github.com/Rifqiarrayan/Dashboard-E-commerce-POWER-BI-'
     }
 ];
 
@@ -167,7 +279,7 @@ const certificationsData = [
         category: 'data-analyst',
         image: 'images/Certiport.jpg',
         hasDetails: true,
-        slides: ['images/cfi.png', 'images/Certiport.jpg'],
+        slides: ['images/Certiport.jpg'],
         details: `
         <div class="modal-key">
             <div class="modal-key-header">IT Specialist - Data Analytics (Certiport)</div>
@@ -348,19 +460,27 @@ function loadProjects(filter = 'all') {
     const grid = document.getElementById('projects-grid');
     const filtered = filter === 'all' ? projectsData : projectsData.filter(p => p.category === filter);
     
-    grid.innerHTML = filtered.map(project => `
-        <div class="project-card">
-            <div class="project-image">${project.image}</div>
-            <div class="project-content">
-                <h3>${project.title}</h3>
-                <div class="project-tools">
-                    ${project.tools.map(tool => `<span class="project-tool">${tool}</span>`).join('')}
+    grid.innerHTML = filtered.map(project => {
+        // Check if image is a file path or emoji/icon
+        const isImageFile = project.image && (project.image.includes('.png') || project.image.includes('.jpg') || project.image.includes('.jpeg') || project.image.includes('.gif') || project.image.includes('.webp'));
+        const imageContent = isImageFile 
+            ? `<img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">` 
+            : project.image;
+        
+        return `
+            <div class="project-card">
+                <div class="project-image">${imageContent}</div>
+                <div class="project-content">
+                    <h3>${project.title}</h3>
+                    <div class="project-tools">
+                        ${project.tools.map(tool => `<span class="project-tool">${tool}</span>`).join('')}
+                    </div>
+                    <p class="project-related">Related to: ${project.related}</p>
+                    <button class="btn-detail" onclick="openProjectModal(${project.id})">Read More</button>
                 </div>
-                <p class="project-related">Related to: ${project.related}</p>
-                <button class="btn-detail" onclick="openProjectModal(${project.id})">Read More</button>
             </div>
-        </div>
-    `).join('');
+        `;
+    }).join('');
 }
 
 // Filter Projects
@@ -417,6 +537,44 @@ function openProjectModal(id) {
     const toolsHtml = (project.tools || []).map(tool => `<span class="modal-tool">${tool}</span>`).join('');
     document.getElementById('modal-tools').innerHTML = toolsHtml;
     document.getElementById('modal-tools-title').style.display = toolsHtml ? 'block' : 'none';
+
+    // Add GitHub, Hugging Face, or Google Drive button if link exists
+    const modalBody = document.querySelector('.modal-body');
+    let existingLinkBtn = modalBody.querySelector('.project-link-container');
+    if (existingLinkBtn) {
+        existingLinkBtn.remove();
+    }
+    
+    if (project.githubLink || project.huggingFaceLink || project.googleDriveLink) {
+        let logoSrc, buttonText, logoStyle, link;
+        
+        if (project.huggingFaceLink) {
+            link = project.huggingFaceLink;
+            logoSrc = 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg';
+            buttonText = 'View on Hugging Face';
+            logoStyle = 'width: 24px; height: 24px;';
+        } else if (project.googleDriveLink) {
+            link = project.googleDriveLink;
+            logoSrc = 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png';
+            buttonText = 'View on Google Drive';
+            logoStyle = 'width: 24px; height: 24px;';
+        } else {
+            link = project.githubLink;
+            logoSrc = 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png';
+            buttonText = 'View Project';
+            logoStyle = 'width: 24px; height: 24px; filter: invert(1);';
+        }
+        
+        const linkBtnHtml = `
+            <div class="project-link-container" style="margin-top: 20px; text-align: center;">
+                <a href="${link}" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <img src="${logoSrc}" alt="${buttonText}" style="${logoStyle}">
+                    ${buttonText}
+                </a>
+            </div>
+        `;
+        modalBody.insertAdjacentHTML('beforeend', linkBtnHtml);
+    }
 
     document.getElementById('modal').style.display = 'block';
     currentSlide = 0;
