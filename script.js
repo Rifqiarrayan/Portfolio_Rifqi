@@ -513,6 +513,11 @@ function openModal(type) {
     document.getElementById('modal-title').textContent = data.title;
     document.getElementById('modal-description').innerHTML = data.description;
 
+    // Remove any project link buttons when switching from project modal to experience modal
+    const modalBody = document.querySelector('.modal-body');
+    const existingLinkBtn = modalBody.querySelector('.project-link-container');
+    if (existingLinkBtn) existingLinkBtn.remove();
+
     // populate slider with provided slides or fallback defaults
     populateSlider(data.slides || defaultSlides);
 
