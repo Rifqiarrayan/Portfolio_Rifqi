@@ -32,7 +32,7 @@ const experienceData = {
             </div>
         `,
         slides: ['images/Telkom 1.jpeg', 'images/Telkom 2.jpeg', 'images/Telkom 3.jpeg'],
-        tools: ['Python', 'Looker Studio', 'Tableau', 'Excel Macro VBA', 'Excel Formulas']
+        tools: ['Looker Studio', 'Tableau', 'Excel Macro VBA', 'Excel Formulas']
     },
     bpom: {
         title: 'Data Analyst Intern - BPOM',
