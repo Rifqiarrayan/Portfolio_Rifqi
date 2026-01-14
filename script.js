@@ -327,6 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadCertifications('all');
     startRoleLoop();
     setupNav();
+    setupScrollReveal();
 });
 
 // Load Certifications
@@ -609,6 +610,27 @@ function showSlide(n) {
         slide.classList.remove('active');
         if (index === n) slide.classList.add('active');
     });
+}
+
+// Scroll reveal using IntersectionObserver
+function setupScrollReveal() {
+    const revealEls = document.querySelectorAll('.reveal');
+    if (!revealEls.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.2,
+        rootMargin: '0px 0px -5% 0px'
+    });
+
+    revealEls.forEach(el => observer.observe(el));
 }
 
 // Smooth Scroll
