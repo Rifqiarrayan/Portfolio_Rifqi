@@ -357,6 +357,11 @@ function openCertificationModal(id) {
     const cert = certificationsData.find(c => c.id === id);
     if (!cert) return;
     document.getElementById('modal-title').textContent = cert.title;
+
+    // Remove any project link buttons carried over from project modals (e.g., Hugging Face)
+    const modalBody = document.querySelector('.modal-body');
+    const existingLinkBtn = modalBody.querySelector('.project-link-container');
+    if (existingLinkBtn) existingLinkBtn.remove();
     
     if (cert.hasDetails && cert.details) {
         document.getElementById('modal-description').innerHTML = cert.details;
