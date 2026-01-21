@@ -1,21 +1,19 @@
 // Experience Data
 const experienceData = {
     bpjs: {
-        title: 'Procurement Data Management Intern - BPJS Ketenagakerjaan',
+        title: 'Procurement Data Analytics - BPJS Ketenagakerjaan',
         description: `
             <div class="modal-key">
                 <div class="modal-key-header">Key responsibility:</div>
                 <ul class="modal-key-list">
-                    <li>Cleaned and preprocessed nationwide Rumah BUMN MSME data (&gt;20,000 records) for analysis and reporting.</li>
-                    <li>Processed KPI data and evaluated performance for &gt;70 facilitators and &gt;80 rangers across Indonesia.</li>
-                    <li>Performed quarterly analysis on budget allocation, fund utilisation, and KPI achievement; built interactive Looker Studio and Tableau dashboards with KPI metrics and visualization of budget effectiveness and other related metrics.</li>
-                    <li>Developed Excel VBA macros for data cleaning, processing, duplication checks, and trend detection, reducing processing time by up to 80%.</li>
-                    <li>Conducted MSME trend analysis and prepared weekly internal reports on analyzed data, including sales and performance insights.</li>
+                    <li>Developed a procurement dashboard using Tableau that presents SLA Analysis, Procurement SLA, Procurement Monitoring, Contracts, Institutional Expenses, Budget, and Procurement Progress to assist with visual and structured procurement performance monitoring.</li>
+                    <li>Created a 2026 procurement absorption dashboard using Looker Studio to visualize procurement budget realization and absorption periodically and easily.</li>
+                    <li>Created a Google Apps Script-based KAK (Working Reference Framework) Management System website for monitoring procurement data, managing KAK documents, reviewing processes, and printing reports.</li>
                 </ul>
             </div>
         `,
         slides: ['images/BPJS.jpeg'],
-        tools: ['Tableau', 'Google Looker Studio', 'Excel']
+        tools: ['Tableau', 'Google Looker Studio', 'Excel', 'Apps Script', 'Web Developer', 'CSS', 'JavaScript', 'HTML']
     },
     telkom: {
         title: 'Data Analyst Intern - PT Telkom Indonesia',
@@ -144,7 +142,7 @@ const projectsData = [
         category: 'data-analyst',
         related: 'BPJS Ketenagakerjaan Internship',
         tools: ['Looker Studio', 'Tableau'],
-        description: 'Developed a procurement dashboard using Tableau, which includes spend analysis, procurement SLAs, PDN monitoring, contracts, organizational expenses, budgets, and PDN progress. Also, created a dashboard focused on procurement for 2025 using Looker Studio.',
+        description: 'Developed a procurement dashboard using Tableau that presents SLA Analysis, Procurement SLA, Procurement Monitoring, Contracts, Institutional Expenses, Budget, and Procurement Progress to assist with visual and structured procurement performance monitoring. Created a 2026 procurement absorption dashboard using Looker Studio to visualize procurement budget realization and absorption periodically and easily.',
         image: 'images/Confidential project.jpg',
         slides: ['images/Confidential project.jpg']
     },
