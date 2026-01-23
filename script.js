@@ -8,7 +8,7 @@ const experienceData = {
                 <ul class="modal-key-list">
                     <li>Developed a procurement dashboard using Tableau that presents SLA Analysis, Procurement SLA, Procurement Monitoring, Contracts, Institutional Expenses, Budget, and Procurement Progress to assist with visual and structured procurement performance monitoring.</li>
                     <li>Created a 2026 procurement absorption dashboard using Looker Studio to visualize procurement budget realization and absorption periodically and easily.</li>
-                    <li>Created a Google Apps Script-based KAK (Working Reference Framework) Management System website for monitoring procurement data, managing KAK documents, reviewing processes, and printing reports.</li>
+                    <li>Created a Google Apps Script-based KAK (Kerangka kerja acuan) Management System website for monitoring procurement data, managing KAK documents, reviewing processes, and printing reports.</li>
                 </ul>
             </div>
         `,
