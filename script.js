@@ -8,12 +8,12 @@ const experienceData = {
                 <ul class="modal-key-list">
                     <li>Developed a procurement dashboard using Tableau that presents SLA Analysis, Procurement SLA, Procurement Monitoring, Contracts, Institutional Expenses, Budget, and Procurement Progress to assist with visual and structured procurement performance monitoring.</li>
                     <li>Created a 2026 procurement absorption dashboard using Looker Studio to visualize procurement budget realization and absorption periodically and easily.</li>
-                    <li>Created a Google Apps Script-based KAK (Kerangka kerja acuan) Management System website for monitoring procurement data, managing KAK documents, reviewing processes, and printing reports.</li>
+                    <li>Create a KAK (Kerangka Acuan Kerja) management system website using PHP and MySQL for monitoring KAK documents, KAK reviews, and KAK reports.</li>
                 </ul>
             </div>
         `,
         slides: ['images/BPJS.jpeg'],
-        tools: ['Tableau', 'Google Looker Studio', 'Excel', 'Apps Script', 'Web Developer', 'CSS', 'JavaScript', 'HTML']
+        tools: ['Data Visualization', 'Data Analysis', 'Tableau', 'Google looker studio', 'Microsoft Excel', 'Spreadsheets', 'Excel Formulas', 'PHP', 'MySQL', 'HTML', 'JavaScript', 'Cascading Style Sheets (CSS)']
     },
     telkom: {
         title: 'Data Analyst Intern - PT Telkom Indonesia',
@@ -30,7 +30,7 @@ const experienceData = {
             </div>
         `,
         slides: ['images/Telkom 1.jpeg', 'images/Telkom 2.jpeg', 'images/Telkom 3.jpeg'],
-        tools: ['Looker Studio', 'Tableau', 'Excel Macro VBA', 'Excel Formulas']
+        tools: ['Data Visualization', 'Data Analysis', 'Tableau', 'Google looker studio', 'Microsoft Excel', 'Spreadsheets']
     },
     bpom: {
         title: 'Data Analyst Intern - BPOM',
@@ -46,7 +46,7 @@ const experienceData = {
             </div>
         `,
         slides: ['images/bpom1.jpeg', 'images/bpom2.jpeg', 'images/bpom3.jpeg'],
-        tools: ['Excel Macro VBA', 'Data Visualization', 'Dashboard Design']
+        tools: ['Data Visualization', 'Data Analysis', 'Microsoft Excel', 'Spreadsheets', 'Microsoft Excel Macros', 'Excel Formulas']
     },
     labassist: {
         title: 'Laboratory Assistant - Data Structure and Algorithms',
