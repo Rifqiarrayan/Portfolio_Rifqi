@@ -6,14 +6,15 @@ const experienceData = {
             <div class="modal-key">
                 <div class="modal-key-header">Key responsibility:</div>
                 <ul class="modal-key-list">
-                    <li>Developed a procurement dashboard using Tableau that presents SLA Analysis, Procurement SLA, Procurement Monitoring, Contracts, Institutional Expenses, Budget, and Procurement Progress to assist with visual and structured procurement performance monitoring.</li>
-                    <li>Created a 2026 procurement absorption dashboard using Looker Studio to visualize procurement budget realization and absorption periodically and easily.</li>
-                    <li>Create a KAK (Kerangka Acuan Kerja) management system website using PHP and MySQL for monitoring KAK documents, KAK reviews, and KAK reports.</li>
+                    <li>Developing a procurement dashboard using Tableau for SLA analysis, monitoring procurement progress, contracts, and budgets in a visual and structured manner.</li>
+                    <li>Creating a 2026 procurement budget absorption dashboard using Looker Studio to monitor budget realisation and absorption rates on a regular basis.</li>
+                    <li>Designing and implementing a KAK (Kerangka Acuan Kerja) Management System website using PHP and MySQL for KAK document management, monitoring, and reporting.</li>
+                    <li>Designing and building an Archive Management System website using Google Apps Script with HTML, CSS, and JavaScript for archive management and visualisation of archive storage locations.</li>
                 </ul>
             </div>
         `,
         slides: ['images/Foto BPJS.jpeg', 'images/BPJS.jpeg'],
-        tools: ['Data Visualization', 'Data Analysis', 'Tableau', 'Google looker studio', 'Microsoft Excel', 'Spreadsheets', 'Excel Formulas', 'PHP', 'MySQL', 'HTML', 'JavaScript', 'Cascading Style Sheets (CSS)']
+        tools: ['Data Visualization', 'Data Analysis', 'Tableau', 'Google Looker Studio', 'Microsoft Excel', 'Spreadsheets', 'Excel Formulas', 'PHP', 'MySQL', 'HTML', 'JavaScript', 'Cascading Style Sheets (CSS)', 'Google Apps Script']
     },
     telkom: {
         title: 'Data Analyst Intern - PT Telkom Indonesia',
