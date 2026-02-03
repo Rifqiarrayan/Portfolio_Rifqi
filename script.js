@@ -14,7 +14,7 @@ const experienceData = {
             </div>
         `,
         slides: ['images/Foto BPJS.jpeg', 'images/BPJS.jpeg'],
-        tools: ['Data Visualization', 'Data Analysis', 'Tableau', 'Google Looker Studio', 'Microsoft Excel', 'Spreadsheets', 'Excel Formulas', 'PHP', 'MySQL', 'HTML', 'JavaScript', 'Cascading Style Sheets (CSS)', 'Google Apps Script']
+        tools: ['Data Visualization', 'Data Analysis', 'Tableau', 'Google Looker Studio', 'Microsoft Excel', 'Spreadsheets', 'Excel Formulas', 'SQL', 'PHP', 'MySQL', 'HTML', 'JavaScript', 'Cascading Style Sheets (CSS)', 'Google Apps Script']
     },
     telkom: {
         title: 'Data Analyst Intern - PT Telkom Indonesia',
@@ -31,7 +31,7 @@ const experienceData = {
             </div>
         `,
         slides: ['images/Telkom 1.jpeg', 'images/Telkom 2.jpeg', 'images/Telkom 3.jpeg'],
-        tools: ['Data Visualization', 'Data Analysis', 'Tableau', 'Google looker studio', 'Microsoft Excel', 'Spreadsheets']
+        tools: ['Data Visualization', 'Data Analysis', 'Tableau', 'Google Looker Studio', 'Microsoft Excel', 'Spreadsheets', 'Microsoft Excel Macros']
     },
     bpom: {
         title: 'Data Analyst Intern - BPOM',
