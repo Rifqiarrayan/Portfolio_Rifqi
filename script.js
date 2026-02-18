@@ -64,6 +64,22 @@ const experienceData = {
         slides: ['images/Aslab1.jpg', 'images/Aslab2.jpg', 'images/Aslab3.jpg'],
         tools: ['C Programming language', 'C++ programming language', 'Data Structures', 'Algorithms']
     },
+    labassistdb: {
+        title: 'Laboratory Assistant - Database System',
+        description: `
+            <div class="modal-key">
+                <div class="modal-key-header">Description update:</div>
+                <ul class="modal-key-list">
+                    <li>Detailed description is not available yet and will be updated soon.</li>
+                </ul>
+            </div>
+        `,
+        slides: [
+            'https://via.placeholder.com/800x400/667eea/ffffff?text=Coming+Soon',
+            'https://via.placeholder.com/800x400/764ba2/ffffff?text=Image+Not+Available'
+        ],
+        tools: ['PostgreSQL', 'SQL']
+    },
 
     ksm: {
         title: 'Member Data Scientist - Kelompok Studi Mahasiswa Android UPNVJ',
