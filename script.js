@@ -391,7 +391,7 @@ function openCertificationModal(id) {
 
 // Animated role loop
 function startRoleLoop() {
-    const roles = ['Data Analyst Enthusiast', 'Data Scientist Enthusiast', 'Business Intelligence Enthusiast'];
+    const roles = ['Data Analyst Enthusiast', 'Data Engineer Enthusiast', 'Data Scientist Enthusiast', 'Business Intelligence Enthusiast'];
     let i = 0;
     const roleEl = document.getElementById('role');
     if (!roleEl) return;

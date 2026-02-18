@@ -512,8 +512,14 @@ section {
 
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .experience-card {
@@ -528,12 +534,45 @@ section {
     margin-bottom: 1rem;
 }
 
+.experience-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    width: 2px;
+    background: #d9d9d9;
+}
+
 .experience-item {
+    position: relative;
     background: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1rem;
-    border-left: 4px solid #0a0a0a;
+    border-left: none;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #0a0a0a;
+    border: 2px solid #ffffff;
+    left: -1.95rem;
+    top: 1.65rem;
+    box-shadow: 0 0 0 2px rgba(10,10,10,0.15);
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
 }
 
 .experience-header {
