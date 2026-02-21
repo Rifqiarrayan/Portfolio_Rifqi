@@ -131,7 +131,7 @@ const experienceData = {
                 </ul>
             </div>
         `,
-        slides: ['images/Sertifikat Mulmed.jpg'],
+        slides: ['images/Sertifikat Mulmed.jpg', 'images/UIUX Design.jpeg'],
         tools: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS', 'Express.js', 'Figma', 'UI/UX Design']
     },
     senat: {
