@@ -13,7 +13,7 @@ const experienceData = {
                 </ul>
             </div>
         `,
-        slides: ['images/Foto BPJS.jpeg', 'images/BPJS.jpeg'],
+        slides: ['images/Sertifikat BPJS.jpg', 'images/Foto BPJS.jpeg', 'images/BPJS.jpeg'],
         tools: ['Data Visualization', 'Data Analysis', 'Tableau', 'Google Looker Studio', 'Microsoft Excel', 'Spreadsheets', 'Excel Formulas', 'SQL', 'PHP', 'MySQL', 'HTML', 'JavaScript', 'Cascading Style Sheets (CSS)', 'Google Apps Script']
     },
     telkom: {

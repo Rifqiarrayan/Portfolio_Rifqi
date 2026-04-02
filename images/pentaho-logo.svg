@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Pentaho logo">
+	<rect width="128" height="128" rx="18" fill="#0f172a"/>
+	<circle cx="64" cy="64" r="44" fill="#0ea5e9"/>
+	<path d="M48 28h20c19.88 0 36 16.12 36 36S87.88 100 68 100H48V28zm20 56c11.05 0 20-8.95 20-20s-8.95-20-20-20h-4v40h4z" fill="#ffffff"/>
+</svg>
