@@ -55,9 +55,9 @@ const experienceData = {
             <div class="modal-key">
                 <div class="modal-key-header">Key responsibility:</div>
                 <ul class="modal-key-list">
-                    <li>Directly assisted 70 students from two study programs: Bachelor of Information Systems (class A) using C programming language, and Bachelor of Informatics (class B) using C++ programming language.</li>
+                    <li>Assisted in teaching a data structures and algorithms course to 70 students, Bachelor of Information Systems (class A) using C programming language, and Bachelor of Informatics (class B) using C++ programming language.</li>
                     <li>Developed 14 technical learning modules covering topics such as Array, Single-Linked List, Sorting Algorithm, Tree, Queue, Pointer, and Minimum Spanning Tree (MST), among others.</li>
-                    <li>Provided direct instruction for 14 sessions per class, training students in understanding programming logic and code efficiency.</li>
+                    <li>Provided direct instruction for 14 sessions per class, training students in understanding programming logic.</li>
                 </ul>
             </div>
         `,
@@ -68,17 +68,18 @@ const experienceData = {
         title: 'Laboratory Assistant - Database System',
         description: `
             <div class="modal-key">
-                <div class="modal-key-header">Description update:</div>
+                <div class="modal-key-header">Key responsibility:</div>
                 <ul class="modal-key-list">
-                    <li>Detailed description is not available yet and will be updated soon.</li>
+                    <li>Assisted in teaching database system courses to 70 students.</li>
+                    <li>Explained core SQL concepts, including advanced topics such as COALESCE, Window Functions, Triggers, and other database operations.</li>
+                    <li>Supervised and guided students during practical sessions (hands-on lab) to ensure proper understanding and implementation.</li>
+                    <li>Provided support and troubleshooting for student queries related to SQL and database design.</li>
+                    <li>Utilized PostgreSQL for hands-on database practice and exercises.</li>
                 </ul>
             </div>
         `,
-        slides: [
-            'https://via.placeholder.com/800x400/667eea/ffffff?text=Coming+Soon',
-            'https://via.placeholder.com/800x400/764ba2/ffffff?text=Image+Not+Available'
-        ],
-        tools: ['PostgreSQL', 'SQL']
+        slides: ['images/Aslab basdat1.jpeg', 'images/Aslab basdat2.jpeg'],
+        tools: ['SQL', 'PostgreSQL', 'Database Management System']
     },
 
     ksm: {
