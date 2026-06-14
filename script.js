@@ -283,6 +283,26 @@ const projectsData = [
         image: 'images/E-Commerce.png',
         slides: ['images/E-Commerce.png'],
         githubLink: 'https://github.com/Rifqiarrayan/Dashboard-E-commerce-POWER-BI-'
+    },
+    {
+        id: 13,
+        title: 'KAK Management System',
+        category: 'system-analyst',
+        related: 'BPJS Ketenagakerjaan Internship',
+        tools: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
+        description: 'Designed and implemented a KAK (Kerangka Acuan Kerja) Management System website to support KAK document management, monitoring, and reporting. The system was built to help organize documents more efficiently and streamline internal workflow tracking.',
+        image: 'images/Confidential project.jpg',
+        slides: ['images/Confidential project.jpg']
+    },
+    {
+        id: 14,
+        title: 'Analisis dan Perancangan Sistem Informasi Aplikasi “Homify” Menggunakan Unified Modeling Language (UML)',
+        category: 'system-analyst',
+        tools: ['UML', 'Use Case Diagram', 'Activity Diagram', 'Class Diagram', 'Data Flow Diagrams (DFD)', 'BPMN'],
+        description: 'Analisis dan Perancangan Sistem Informasi Aplikasi “Homify” Menggunakan Unified Modeling Language (UML) terindex Sinta 4.',
+        image: 'images/Jurnal.png',
+        slides: ['images/Jurnal.png'],
+        researchGateLink: 'https://www.researchgate.net/publication/386869966_Analisis_dan_Perancangan_Sistem_Informasi_Aplikasi_Homify_Menggunakan_Unified_Modeling_Language_UML'
     }
 ];
 
@@ -335,6 +355,18 @@ const certificationsData = [
     { id: 13, title: 'Power BI For Beginners (Simplilearn)', category: 'data-analyst', image: 'images/powerbi.png' },
     { id: 14, title: 'Microsoft Excel (DQlab)', category: 'data-analyst', image: 'images/excel(dqlab).png' },
     { id: 15, title: 'Data Analytics (Delloite)', category: 'data-analyst', image: 'images/Delloite.png' },
+    {
+        id: 16,
+        title: 'BNSP Certified System Analyst',
+        category: 'system-analyst',
+        image: 'images/BNSP 1.jpeg',
+        hasDetails: true,
+        slides: ['images/BNSP 1.jpeg', 'images/BNSP 2.jpeg'],
+        details: `
+        <div class="modal-key">
+            <div class="modal-key-header">BNSP Certified System Analyst</div>
+        </div>`
+    },
 ];
 
 // Load Projects and Certifications on Start
@@ -496,7 +528,7 @@ function loadProjects(filter = 'all') {
                     <div class="project-tools">
                         ${project.tools.map(tool => `<span class="project-tool">${tool}</span>`).join('')}
                     </div>
-                    <p class="project-related">Related to: ${project.related}</p>
+                    ${project.related ? `<p class="project-related">Related to: ${project.related}</p>` : ''}
                     <button class="btn-detail" onclick="openProjectModal(${project.id})">Read More</button>
                 </div>
             </div>
@@ -564,17 +596,22 @@ function openProjectModal(id) {
     document.getElementById('modal-tools').innerHTML = toolsHtml;
     document.getElementById('modal-tools-title').style.display = toolsHtml ? 'block' : 'none';
 
-    // Add GitHub, Hugging Face, or Google Drive button if link exists
+    // Add external link button if link exists
     const modalBody = document.querySelector('.modal-body');
     let existingLinkBtn = modalBody.querySelector('.project-link-container');
     if (existingLinkBtn) {
         existingLinkBtn.remove();
     }
     
-    if (project.githubLink || project.huggingFaceLink || project.googleDriveLink) {
+    if (project.githubLink || project.huggingFaceLink || project.googleDriveLink || project.researchGateLink) {
         let logoSrc, buttonText, logoStyle, link;
         
-        if (project.huggingFaceLink) {
+        if (project.researchGateLink) {
+            link = project.researchGateLink;
+            buttonText = 'View Journal';
+            logoSrc = '';
+            logoStyle = '';
+        } else if (project.huggingFaceLink) {
             link = project.huggingFaceLink;
             logoSrc = 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg';
             buttonText = 'View on Hugging Face';
@@ -594,7 +631,7 @@ function openProjectModal(id) {
         const linkBtnHtml = `
             <div class="project-link-container" style="margin-top: 20px; text-align: center;">
                 <a href="${link}" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
-                    <img src="${logoSrc}" alt="${buttonText}" style="${logoStyle}">
+                    ${logoSrc ? `<img src="${logoSrc}" alt="${buttonText}" style="${logoStyle}">` : ''}
                     ${buttonText}
                 </a>
             </div>
