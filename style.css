@@ -314,13 +314,21 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
+.linkedin-icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+    color: #0a66c2;
+}
+
 .linkedin-logo:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 28px rgba(34, 211, 238, 0.2);
 }
 
 @media (max-width: 480px) {
-    .linkedin-logo { width: 44px; height: 44px; font-size: 0.95rem; }
+    .linkedin-logo { width: 44px; height: 44px; }
+    .linkedin-icon { width: 20px; height: 20px; }
 }
 
 /* Education Section */

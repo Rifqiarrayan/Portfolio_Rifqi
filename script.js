@@ -285,8 +285,18 @@ const projectsData = [
         githubLink: 'https://github.com/Rifqiarrayan/Dashboard-E-commerce-POWER-BI-'
     },
     {
+        id: 15,
+        title: 'Sales Dashboard Using Power BI',
+        category: 'data-analyst',
+        related: 'Personal Project',
+        tools: ['Power BI'],
+        description: 'Developed an interactive Sales Dashboard using Microsoft Power BI to monitor business performance through sales, cost, and profit analysis. The dashboard provides key business insights with dynamic filtering by Month, Category, Region, and Product, enabling users to analyze data from multiple perspectives.',
+        image: 'images/Power BI (Sales E-Commerce).png',
+        slides: ['images/Power BI (Sales E-Commerce).png']
+    },
+    {
         id: 13,
-        title: 'KAK Management System',
+        title: 'Website KAK (Kerangka Acuan Kerja) Management System',
         category: 'system-analyst',
         related: 'BPJS Ketenagakerjaan Internship',
         tools: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
