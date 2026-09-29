@@ -1,5 +1,23 @@
 // Experience Data
 const experienceData = {
+    sera: {
+        title: 'Procurement Data Analyst Intern - PT. Serasi Autoraya (Member of Astra)',
+        description: `
+            <div class="modal-key">
+                <div class="modal-key-header">Key responsibility:</div>
+                <ul class="modal-key-list">
+                    <li>Selected as one of 90 interns from 57,000+ applicants to join the Astra Internship Fair (AIF) Batch 4.</li>
+                    <li>Built Power BI dashboards from scratch, including relational databases, DAX, and data visualization, for Logistics, Vehicle Units, General Procurement, and Procurement Employee Performance.</li>
+                    <li>Performed data extraction, transformation, and preparation using Power Query and Microsoft Excel.</li>
+                    <li>Processed and analyzed procurement data using Excel VBA Macro, including PR Release calculations, data conditioning, and procurement monitoring.</li>
+                    <li>Automated procurement processes using Excel VBA to generate and automatically send emails to vendors, and implemented procurement approval workflows using SharePoint Lists and Power Automate.</li>
+                    <li>Analyzed the end-to-end procurement workflow from Purchase Requisition (PR), PR Release, Purchase Order (PO), Goods Receipt (GR), to Invoice Receipt (IR).</li>
+                </ul>
+            </div>
+        `,
+        slides: ['images/ASTRA 1.jpg', 'images/ASTRA 2.jpg', 'images/ASTRA 3.jpg'],
+        tools: ['Power BI', 'Relational Database', 'DAX', 'Data Visualization', 'Power Query', 'Microsoft Excel', 'Excel VBA Macro', 'SharePoint Lists', 'Power Automate', 'Procurement Analysis']
+    },
     bpjs: {
         title: 'Procurement Data Analytics - BPJS Ketenagakerjaan',
         description: `
