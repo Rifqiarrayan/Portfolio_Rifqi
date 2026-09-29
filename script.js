@@ -1,7 +1,7 @@
 // Experience Data
 const experienceData = {
     sera: {
-        title: 'Procurement Data Analyst Intern - PT. Serasi Autoraya (Member of Astra)',
+        title: 'Procurement Data Analyst Intern - PT. Serasi Autoraya (Member of Astra International)',
         description: `
             <div class="modal-key">
                 <div class="modal-key-header">Key responsibility:</div>
